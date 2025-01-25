@@ -14,14 +14,14 @@ const port = process.env.PORT || 5000;
 
 // Test GET request
 app.get("/", (req, res) => {
-  res.status(200).send("welcome-to Evangadi-");
+  res.status(200).send("welcome-to Evangadi-forum");
 });
 
 // CORS middleware
 app.use(
   cors({
     origin: [
-      // "http://localhost:5173",
+      "http://localhost:5173",
       // "http://localhost:5000",
       "https://technotes.onrender.com",
       // "https://evangadi-forum-project-frontend.vercel.app/",
